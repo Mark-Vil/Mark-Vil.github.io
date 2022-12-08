@@ -280,12 +280,9 @@ canvas {
     position: relative;
     object-fit: cover;
     border-radius: 50%;
-    border: 10px solid rgb(220, 20, 60);
+    border: 5px solid rgb(220, 20, 60);
     
 }
-
-
-
 .about .about-content .right {
     overflow: hidden;
     width: 50%;
