@@ -275,14 +275,15 @@ canvas {
     margin-bottom: 70px;
 }
 .about .about-content .left img {
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     position: relative;
     object-fit: cover;
     border-radius: 50%;
     border: 10px solid rgb(220, 20, 60);
     
 }
+
 
 
 .about .about-content .right {
