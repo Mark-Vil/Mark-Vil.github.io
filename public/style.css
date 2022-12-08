@@ -283,6 +283,10 @@ canvas {
     border: 5px solid rgb(220, 20, 60);
     
 }
+.left img {
+    max-width: 100%;
+    height: auto;
+}
 .about .about-content .right {
     overflow: hidden;
     width: 50%;
