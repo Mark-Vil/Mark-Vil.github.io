@@ -14,7 +14,7 @@ function Mail() {
         document.getElementById("Email").value = "";
         document.getElementById("Message").value = "";
         console.log(res);
-        alert("Your message sent succesfully");
+        alert("Your message sent succesfully!");
     })
         .catch((err) => console.log(err));
 }    
