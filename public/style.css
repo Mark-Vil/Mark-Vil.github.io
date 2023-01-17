@@ -324,7 +324,6 @@ ul li .first-block{
 
 
 .about-info ul {
-    
     bottom: 250px;
     position: relative;
    
@@ -379,11 +378,12 @@ ul li .first-block{
 }
 
 .services .serv-content .card {
-    width: calc(33% - 20px);
+    width: 304px;
+    height: 360px;
     background: #222;
     text-align: center;
     border-radius: 10px;
-    padding: 50px 25px;
+    padding: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -397,13 +397,13 @@ ul li .first-block{
 }
 
 .services .serv-content .card:hover .box {
-    transform: all 0.3s ease;
+    transform: all 0.1s ease;
 }
 
 .services .serv-content .card i {
     font-size: 50px;
     color: crimson;
-    transition: color 0.3s ease;
+    transition: color 0.1s ease;
 }
 
 .services .serv-content .card:hover i {
@@ -411,9 +411,9 @@ ul li .first-block{
 }
 
 .services .serv-content .card .text {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    
 }
 
 /* skills section styling */
@@ -511,7 +511,7 @@ ul li .first-block{
     width: 50%;
 }
 
-.skills-content .right .mysql::before {
+.skills-content .right .python::before {
     width: 70%;
 }
 
