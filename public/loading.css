@@ -329,7 +329,6 @@ body {
         }
     
     body {
-            align-items: center;
             display: flex;
             justify-content: center;
             background: #191a1a;
