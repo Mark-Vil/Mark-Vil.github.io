@@ -327,8 +327,7 @@ body {
 }
 @media only screen and (max-width: 414px){
     body {
-            height: 100vh;
-            width: auto;
+            max-width: 100%;
         }
     
     body {
