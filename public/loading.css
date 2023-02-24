@@ -2,8 +2,7 @@ html,
 body {
     height: 100%;
     width: auto;
-    margin: 0;
-    padding: 0;
+    
 }
 
 body {
@@ -346,5 +345,4 @@ body {
         transform: translate3d(0, -25px, 0) scale(1);
         width: 9px;
     }
-
 }
