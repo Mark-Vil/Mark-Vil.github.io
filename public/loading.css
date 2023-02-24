@@ -12,7 +12,9 @@ body {
 }
 
 .loader {
-    position: absolute;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .loader .dot {
