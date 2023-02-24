@@ -756,6 +756,13 @@ footer span a:hover {
 }
 
 @media (max-width: 768px) {
+    body {
+            max-width: 100%;
+            overflow-x: hidden;
+    }
+    .home {
+            max-width: 100%;
+    }
     .max-width {
         padding: 0 23px;
         
