@@ -6,6 +6,6 @@ loaderIframe.addEventListener('load', function() {
   loaderIframe.contentDocument.head.appendChild(loaderStyles);
 });
 
-window.onload = function() {
-  loaderIframe.parentNode.removeChild(loaderIframe);
-};
+setTimeout(function() {
+    loaderIframe.parentNode.removeChild(loaderIframe);
+  }, 2000);
