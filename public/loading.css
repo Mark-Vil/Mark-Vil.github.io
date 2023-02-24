@@ -2,6 +2,8 @@ html,
 body {
     height: 100%;
     width: auto;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -330,10 +332,16 @@ body {
         }
     
     body {
-            
             justify-content: center;
             background: #191a1a;
         }
+    .loader {
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+    }
     .loader .dot {
         animation-name: movement;
         animation-duration: 2s;
