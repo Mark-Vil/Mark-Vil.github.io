@@ -156,7 +156,7 @@ section .title::after {
 
 /* menu btn styling */
 .menu-btn {
-    color: #fff;
+    color: crimson;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -269,6 +269,54 @@ margin: 5px 0;
     color: crimson;
     background: none;
 }
+.social-menu ul{
+    position: absolute;
+    margin-top: 420px;
+    left: 280px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 999;
+    }
+    .social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+    }
+    .social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+    }
+    .social-menu ul li .fab:hover{
+    color: #fff;
+    }
+    .social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    }
+    .social-menu ul li a:hover{
+    transform: translate(0, -10%);
+    }
+    .social-menu ul li:nth-child(1) a:hover{
+    background-color: crimson;
+    }
+    .social-menu ul li:nth-child(2) a:hover{
+    background-color: crimson;
+    }
+    .social-menu ul li:nth-child(3) a:hover{
+    background-color: crimson;
+    }
+    .social-menu ul li:nth-child(4) a:hover{
+    background-color: crimson;
+    }
+
          /* ABOUT SECTION */
 .about-content .left{
     height: 400px;
@@ -671,11 +719,15 @@ footer span a:hover {
         height: 350px;
         width: 350px;
     }
+    
 }
 
 @media (max-width: 991px) {
     .max-width {
         padding: 0 50px;
+    }
+    .ul{
+        padding:0 50px;
     }
 }
 
@@ -684,6 +736,15 @@ footer span a:hover {
         display: block;
         z-index: 999;
     }
+    .social-menu ul{
+        position: relative;
+        top: 150px;
+        left: 0px;
+        right: 0px;
+        transform: translate(-50%, -50%);
+        display: flex;
+        z-index: 999;
+        }
 
     .menu-btn i.active:before {
         content: "\f00d";
@@ -726,6 +787,9 @@ footer span a:hover {
     .home .home-content a {
         font-size: 23px;
         padding: 10px 30px;
+    }
+    .social-menu ul{
+        padding:10px 30px;
     }
 
     .max-width {
@@ -771,7 +835,15 @@ footer span a:hover {
         padding: 0 23px;
         
     }
-    
+    .social-menu ul{
+        position: relative;
+        top: 150px;
+        left: 0px;
+        right: 0px;
+        transform: translate(-50%, -50%);
+        display: flex;
+        z-index: 999;
+        }
     .home .home-content .text-2 {
         font-size: 60px;
     }
@@ -789,6 +861,7 @@ footer span a:hover {
         width: 100%;
     }
 }
+
 
 @media (max-width: 500px) {
     body {
@@ -870,4 +943,50 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
+    .social-menu ul{
+        position:relative;
+        left: 0;
+        right:0;
+        top: 150px;
+        transform: translate(-50%, -50%);
+        display: flex;
+        z-index: 999;
+        }
+    .social-menu ul li {
+        margin: 0 5px;
+        }
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    }
+    .social-menu ul li .fab{
+        font-size: 20px;
+        line-height: 42px;
+        transition: .3s;
+        color: #000;
+        }
+        .social-menu ul li .fab:hover{
+        color: #fff;
+        }
+        .social-menu ul li a:hover{
+        transform: translate(0, -10%);
+        }
+        .social-menu ul li:nth-child(1) a:hover{
+        background-color: crimson;
+        }
+        .social-menu ul li:nth-child(2) a:hover{
+        background-color: crimson;
+        }
+        .social-menu ul li:nth-child(3) a:hover{
+        background-color: crimson;
+        }
+        .social-menu ul li:nth-child(4) a:hover{
+        background-color: crimson;
+        }
+    
 }
