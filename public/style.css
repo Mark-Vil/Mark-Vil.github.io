@@ -945,8 +945,8 @@ footer span a:hover {
     }
     .social-menu ul{
         position:relative;
-        left: 0;
-        right:0;
+        left: 0px;
+        right:0px;
         top: 150px;
         transform: translate(-50%, -50%);
         display: flex;
@@ -989,4 +989,5 @@ footer span a:hover {
         background-color: crimson;
         }
     
+
 }
