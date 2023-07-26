@@ -90,7 +90,7 @@ section .title::after {
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #00c8ec;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -108,7 +108,7 @@ section .title::after {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: crimson;
+    background: #00c8ec;
 }
 
 .navbar .max-width {
@@ -124,7 +124,7 @@ section .title::after {
 }
 
 .navbar .logo a span {
-    color: crimson;
+    color: #09D3FC;
     transition: all 0.3s ease;
 }
 
@@ -137,18 +137,53 @@ section .title::after {
     display: inline-block;
 }
 
+
 .navbar .menu li a {
     display: block;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
+    left: 40px;
+    transition: color 0.2s ease;
+    padding: 10px;
 }
+.hoverline { 
+    display: table-cell; 
+    position: relative; 
+    
+  }
+  a {
+    color: #00c1e4;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+    
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: #FFFFFF;
+    transition: width 0.2s ease 0s, left 0.2s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 
 .navbar .menu li a:hover {
-    color: crimson;
+    color: #00c8ec;
+    
 }
+
+
 
 .navbar.sticky .menu li a:hover {
     color: #fff;
@@ -156,17 +191,34 @@ section .title::after {
 
 /* menu btn styling */
 .menu-btn {
-    color: crimson;
+    color: #FFFFFF;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
+.menu::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 2px; /* Adjust the height of the underline as needed */
+    background-color: #09D3FC; /* Color of the underline */
+    transform: scaleX(0); /* Initially set the underline to have zero width */
+    transform-origin: left; /* Expand the underline from the left to right */
+    /* Add a smooth animation to the underline */
+  }
+  
+  .menu :hover::before {
+    transform: scaleX(1); /* Expand the underline to full width on hover */
+  }
+
 
 .scroll-up-btn {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #09D3FC;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -247,7 +299,7 @@ margin: 5px 0;
 }
 
 .home .home-content .text-3 span {
-    color: crimson;
+    color: #09D3FC;
     font-weight: 500;
     
 }
@@ -333,7 +385,7 @@ margin: 5px 0;
     position: relative;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgb(220, 20, 60);
+    border: 5px solid rgb(0,200,236);
     
 }
 .left img {
@@ -381,7 +433,7 @@ ul li .first-block{
    
 }
 .about .about-content .right .text span {
-    color: crimson;
+    color: #09D3FC;
 }
 
 .about .about-content .right p {
@@ -438,10 +490,21 @@ ul li .first-block{
     padding: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
+    animation: animated-border 2s infinite;
 }
-
+@keyframes animated-border {
+  0% {
+    border: 2px solid #222;
+  }
+  50% {
+    border: 4px solid #00c8ec; /* Change the border color and size halfway through the animation */
+  }
+  100% {
+    border: 2px solid #222;
+  }
+}
 .services .serv-content .card:hover {
-    background: crimson;
+    background: #00c8ec;
 }
 
 .services .serv-content .card .box {
@@ -454,7 +517,7 @@ ul li .first-block{
 
 .services .serv-content .card i {
     font-size: 50px;
-    color: crimson;
+    color: #00c8ec;
     transition: color 0.1s ease;
 }
 
@@ -511,7 +574,7 @@ ul li .first-block{
 }
 
 .skills .skills-content .left a:hover {
-    color: crimson;
+    color: #00c8ec;
     background: none;
 }
 
@@ -544,7 +607,7 @@ ul li .first-block{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: #00c8ec;
 }
 
 .skills-content .right .html::before {
@@ -615,7 +678,7 @@ ul li .first-block{
 
 .contact .contact-content .row i {
     font-size: 25px;
-    color: crimson;
+    color: #00c8ec;
 }
 
 .contact .contact-content .info .head {
@@ -685,32 +748,30 @@ ul li .first-block{
     border-radius: 6px;
     cursor: pointer;
     flex-wrap: nowrap;
-    background: crimson;
-    border: 2px solid crimson;
+    background: #00c8ec;
+    border: 2px solid #00c8ec;
     transition: all 0.3s ease;
 }
 
 .right form .button-area button:hover {
-    color: crimson;
+    color: #00c8ec;
     background: none;
 }
 
 /* footer section styling */
+
 footer {
-    background: #111;
-    padding: 15px 23px;
+    background-color: #00c8ec;
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-}
-
-footer span a {
-    color: crimson;
-    text-decoration: none;
-}
-
-footer span a:hover {
-    text-decoration: underline;
-}
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
 
 
 /* responsive media query start */
@@ -868,7 +929,7 @@ footer span a:hover {
         margin-bottom: 35px;
     }
 }
-@media (max-width: 800px) and (max-height: 400px){
+@media (max-width: 870px) and (max-height: 380px){
     .social-menu ul{
         position:absolute;
         left: 150px!important;
