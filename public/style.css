@@ -196,22 +196,6 @@ section .title::after {
     cursor: pointer;
     display: none;
 }
-.menu::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    height: 2px; /* Adjust the height of the underline as needed */
-    background-color: #09D3FC; /* Color of the underline */
-    transform: scaleX(0); /* Initially set the underline to have zero width */
-    transform-origin: left; /* Expand the underline from the left to right */
-    /* Add a smooth animation to the underline */
-  }
-  
-  .menu :hover::before {
-    transform: scaleX(1); /* Expand the underline to full width on hover */
-  }
 
 
 .scroll-up-btn {
@@ -241,7 +225,7 @@ section .title::after {
 }
 
 .scroll-up-btn:hover {
-    filter: brightness(90%);
+    filter: brightness(80%);
 }
 
 
@@ -490,7 +474,8 @@ ul li .first-block{
     padding: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    animation: animated-border 2s infinite;
+    border: 4px solid #00c8ec;
+    
 }
 @keyframes animated-border {
   0% {
@@ -499,9 +484,7 @@ ul li .first-block{
   50% {
     border: 4px solid #00c8ec; /* Change the border color and size halfway through the animation */
   }
-  100% {
-    border: 2px solid #222;
-  }
+
 }
 .services .serv-content .card:hover {
     background: #00c8ec;
